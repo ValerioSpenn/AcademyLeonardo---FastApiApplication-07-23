@@ -65,6 +65,6 @@ da Main, staccatevi un branch per uno chiamato main/cognomeinizialedelnome (es. 
 Questo sarà il vostro branch principale. Dopo di ché, da questo branch, staccatevi un branch per ogni modifica che effettuate:
 esempio: da main/deianaa staccatevi main/spennatov-kafka.
 Quando è funzionante da main/deianaa-kafka mergiate il branch dentro quello principale main/deianaa.
-
+NON modificate il branch MAIN.
 
 

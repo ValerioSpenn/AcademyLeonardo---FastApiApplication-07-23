@@ -44,7 +44,7 @@ Per eseguire il punto 1 eseguire il comando:
 Capito il "giro", l'obiettivo è replicare le operazioni all'interno del metodo post dichiarato all'interno di src/minio/upload_file.
 
 # COMMENTO GENERALE:
-Per runnare l'app, si installino i pacchetti necessari predisponendo un ambiente venv o conda, installando i pacchetti presenti in requirements, dopodiché si lanci:
+Per runnare l'app, si installino i pacchetti necessari predisponendo un ambiente venv o conda, installando i pacchetti presenti in requirements, dopodiché si lanci il seguente comando all'interno della cartella SRC:
 uvicorn main:app --reload
 
 l'attributo --reload è per la fase di development, permette di possono effettuare modifiche al codice mentre il server è runnato.
@@ -56,7 +56,6 @@ Qualunque pacchetto python utilizziate, aggiungetelo al file requirements.txt.
 
 Infine, potrebbe essere interessante scrivere un file bash.sh per eseguire tutte le operazioni per tirare su l'infrastruttura.
 All'interno del file bash potreste scrivere i comandi per tirare su in maniera automatica i servizi di kafka e minio ed avviare il servizio di API (che a sua volta potete dockerizzare facendo un Dockerfile).
-
 
 Sentitevi liberi di implementare qualsiasi cosa vogliate :D
 

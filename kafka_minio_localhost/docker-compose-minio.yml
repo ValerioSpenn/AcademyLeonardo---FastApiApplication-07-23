@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  minio:
+    image: minio/minio
+    ports:
+      - "9000:9000"
+      - "9002:9002"
+    volumes:
+      - minio_storage:/data
+#      - /path/to/certs:/certs
+    environment:
+      MINIO_ROOT_USER: minio-root-user
+      MINIO_ROOT_PASSWORD: minio-root-password
+#      MINIO_SCHEME: https
+    command: server --console-address ":9001" /data
+
+volumes:
+  minio_storage: {}

@@ -17,7 +17,7 @@ Per quanto riguarda kafka, lo script "kafka_producer" esegue proprio l'operazion
 Il file docker-compose-kafka permette di tirare su il servizio kafka sul proprio pc, permettendo di poterci interagire.
 Le operazioni da eseguire quindi, sono:
 1. tirare su kafka con docker-compose-kafka
-2. provare il codice kafka-consuemr
+2. provare il codice kafka-consumer
 3. verificare che il messaggio è stato scritto sulla coda kafka utilizzando lo script kafka_consumer.
 
 Per eseguire il punto 1 eseguire il comando:

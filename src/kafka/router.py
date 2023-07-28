@@ -6,7 +6,7 @@ import uuid
 router = APIRouter()
 
 @router.post("/send_tss_vitals", tags=["Send TSS Vitals"], description="Endpoint to send tss vitals on kafka got from AI Model")
-async def create_tss_vitals_message(tss_vitals: TssVitals, _position_value: Position, _image_name_value: str) -> KafkaMessage:
+async def create_tss_vitals_message(tss_vitals: TssVitals, position_value: Position, image_name_value: str) -> KafkaMessage:
     random_heart_rate = random.randint(60, 100)
     random_respiratory_rate = random.randint(12, 20)
     random_skin_temperature = round(random.uniform(35.0, 37.5), 2)
